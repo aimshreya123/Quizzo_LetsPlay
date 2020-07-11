@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp"
+    tools:context=".QuizDetailFragment">
+
+    <ImageView
+        android:id="@+id/quizpgImage"
+        android:layout_width="377dp"
+        android:layout_height="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/placeholder_image" />
+
+    <TextView
+        android:id="@+id/quizpgDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/crimson_text"
+        android:text="Quiz Description"
+        android:textColor="@color/LightText"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizpgTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/quizpgDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="172dp"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="Difficulty"
+        android:textColor="@color/LightText"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizpgImage" />
+
+    <TextView
+        android:id="@+id/quizpgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/crimson_text"
+        android:text="Quiz Title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizpgImage"
+        app:layout_constraintVertical_bias="0.044"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <TextView
+        android:id="@+id/totalQuesTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="Total Questions"
+        android:textColor="@color/LightText"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizpgDifficulty"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/lastScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="Last Attempt Score"
+        android:textColor="@color/LightText"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/startQuiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalQuesTxt"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="N/A"
+        android:textColor="@color/LightText"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/totalQues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/quizpgDifficulty"
+        app:layout_constraintTop_toBottomOf="@+id/quizpgImage" />
+
+    <TextView
+        android:id="@+id/totalQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="N/A"
+        android:textColor="@color/LightText"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/totalQuesTxt"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty" />
+
+    <TextView
+        android:id="@+id/lastScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="N/A"
+        android:textColor="@color/LightText"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/startQuiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lastScoreTxt"
+        app:layout_constraintTop_toBottomOf="@id/totalQues"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <Button
+        android:id="@+id/startQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Start Quiz"
+        android:textSize="20dp"
+        android:background="@drawable/primary_btn_bg"
+        android:fontFamily="@font/work_sans_semibold"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

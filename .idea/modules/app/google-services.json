@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "636411436763",
+    "firebase_url": "https://lets-play-500a5.firebaseio.com",
+    "project_id": "lets-play-500a5",
+    "storage_bucket": "lets-play-500a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636411436763:android:0279fe269b27dcbdd0b6fe",
+        "android_client_info": {
+          "package_name": "com.marsinnovations.letsplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636411436763-8kro1g54kpn28upueuhcdsm3dq4itca6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marsinnovations.letsplay",
+            "certificate_hash": "a2b0e5a40ade381e7a25d6239120dc07135c0482"
+          }
+        },
+        {
+          "client_id": "636411436763-3hleme611m2i9hkrsmfklvrpv3ksd1hg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa3Nl8dMFrNymkrFd7Y-V_ZjEoB_EY6mA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636411436763-3hleme611m2i9hkrsmfklvrpv3ksd1hg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
